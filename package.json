@@ -1,0 +1,69 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "author": "yiminghe <yiminghe@gmail.com>",
+  "description": "learning materials and examples for react",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yiminghe/learning-react.git"
+  },
+  "files": [
+    "examples",
+    "tutorial"
+  ],
+  "keywords": [
+    "react",
+    "jsx",
+    "koa",
+    "webpack"
+  ],
+  "dependencies": {
+    "antd": "0.9.0",
+    "d3": "^3.5.5",
+    "events": "^1.0.2",
+    "flux": "^2.0.1",
+    "gregorian-calendar": "3.x",
+    "gregorian-calendar-format": "3.x",
+    "jquery": "^2.1.1",
+    "object-assign": "^2.0.0",
+    "querystring": "^0.2.0",
+    "rc-calendar": "~3.12.4",
+    "rc-dialog": "~4.0.7",
+    "react-art": "^0.13.0",
+    "react-intl": "~1.2.0",
+    "react-router": "1.0.0-rc1",
+    "jsonp": "^0.2.0",
+    "react": "~0.13.0"
+  },
+  "devDependencies": {
+    "babel-core": "~5.8.24",
+    "expect.js": "~0.3.1",
+    "precommit-hook": "^1.0.7",
+    "rc-server": "3.x",
+    "rc-tools": "4.x",
+    "replace": "~0.3.0",
+    "reveal.js": "~3.1.0"
+  },
+  "scripts": {
+    "build": "rc-tools run build",
+    "gh-pages": "rc-tools run gh-pages",
+    "pre-gh-pages": "sh ./scripts/pre-gh-pages.sh",
+    "start": "node --harmony node_modules/.bin/rc-server",
+    "pub": "rc-tools run pub",
+    "lint": "rc-tools run lint",
+    "karma": "rc-tools run karma",
+    "saucelabs": "node --harmony node_modules/.bin/rc-tools run saucelabs",
+    "browser-test": "node --harmony node_modules/.bin/rc-tools run browser-test",
+    "browser-test-cover": "node --harmony node_modules/.bin/rc-tools run browser-test-cover"
+  },
+  "precommit": [
+    "lint"
+  ],
+  "config": {
+    "port": 9000
+  }
+}
